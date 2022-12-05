@@ -11,7 +11,7 @@ fun main() {
     }
 
     fun part1(): String {
-        val lines = parseInput("/Users/thkamaraj/thiyagu/GithubCrawler/src/main/kotlin/aoc22/day05/input5.txt")
+        val lines = parseInput("input/day05.txt")
         val (stacks, commands) = parseStacksAndCommands(lines)
 
         commands.forEach {
@@ -31,7 +31,7 @@ fun main() {
     }
 
     fun part2(): String {
-        val lines = parseInput("/Users/thkamaraj/thiyagu/GithubCrawler/src/main/kotlin/aoc22/day05/input5.txt")
+        val lines = parseInput("input/day05.txt")
         val (stacks, commands) = parseStacksAndCommands(lines)
 
         commands.forEach {
@@ -50,7 +50,7 @@ fun main() {
 
     // test if implementation meets criteria from the description, like:
     check(part1() == "TPGVQPFDH")
-    check(part2() == "MCD")
+    check(part2() == "DMRDFRHHH")
 }
 
 private fun parseStacksAndCommands(input: List<String>): Pair<ArrayList<ArrayDeque<Char>>, List<String>> {
