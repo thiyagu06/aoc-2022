@@ -3,7 +3,7 @@ import java.io.File
 
 fun main() {
 
-    fun parseInput() = File("input.txt/day10.txt").readLines()
+    fun parseInput() = File("input/day10.txt").readLines()
     val keyCycles = listOf(20, 60, 100, 140, 180, 220)
 
     fun star1(input: List<StateRegister>): Int {
